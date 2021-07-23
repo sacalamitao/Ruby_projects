@@ -10,18 +10,24 @@
       </ul>
     </div>
   <% end %>
+  
+  <div class="container-sm">
+    <div class="mb-3">
+      <%= form.label :name, for: "exampleFormControlInput1", class: "form-label"  %>
+      <%= form.text_field :name, class: "form-control", id: "exampleFormControlInput1" %>
+    </div>
 
-  <div class="field">
-    <%= form.label :name %>
-    <%= form.text_field :name %>
-  </div>
 
-  <div class="field">
-    <%= form.label :body %>
-    <%= form.text_area :body %>
-  </div>
 
-  <div class="actions">
-    <%= form.submit %>
+    <div class="mb-3">
+      <%= form.label :body %>
+      <%= form.text_area :body, class: "form-control", id: "exampleFormControlTextarea1", rows: "3"  %>
+    </div>
+
+    <div class="actions">
+      <%= form.submit %>
+    </div>
   </div>
 <% end %>
+
+
