@@ -1,0 +1,2 @@
+class TaskOrganizationsController < ApplicationController
+end
