@@ -1,0 +1,2 @@
+class TaskOrganization < ApplicationRecord
+end
