@@ -14,10 +14,10 @@ RSpec.describe "CreatingTaskOrganizations", type: :system do
 
     click_on 'Create Task Organizations'
 
-    expect(page).to have_contect("Hello, World!")
-    expect(page).to have_contect("Hello, I say!")
+    expect(page).to have_content("Hello, World!")
+    expect(page).to have_content("Hello, I say!")
 
-    task_organizations = TaskOrganizations.order("id").last
+    task_organizations = TaskOrganization.order("id").last
     expect(task_organizations.title).to eq('Hello, World!')
     expect(task_organizations.body).to eq('Hello, I say!')
   end
