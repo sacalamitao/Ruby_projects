@@ -7,6 +7,13 @@ class TaskOrganizationsController < ApplicationController
         @task_organization = TaskOrganization.create(task_organization_params)
     end
 
+    def edit
+    end
+
+    def show
+    end
+
+
     private
 
     def task_organization_params
