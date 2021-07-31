@@ -6,12 +6,15 @@ class TaskOrganizationsController < ApplicationController
     def create
         @task_organization = TaskOrganization.create(task_organization_params)
     end
+    
+    # def show
+    #     @task_organization = TaskOrganization.find(params[:id])
+    # end
 
     def edit
+        @task_organization = TaskOrganization.find(params[:id])
     end
 
-    def show
-    end
 
 
     private
